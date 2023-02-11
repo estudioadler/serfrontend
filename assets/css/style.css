@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color01: #000;
+    --color02: #212121;
+    --color03: #c8c8c8;
+    --color04: #eaeaea;
+    --color05: #f8f8f8;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color05);
+    scroll-behavior: smooth;
+}
+
+/*scrolbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color03);
+    border-radius: 10px;
+}
+/*nav-bar*/
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo p {
+    color: var(--color02);
+    font-size: 1rem;
+    font-weight: 500;
+}
+    
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    color: #202020;
+    font-weight: 500;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+  
+
+  #menu .menu-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+/*hero*/
+
+.hero {
+    margin: 0 auto;
+    max-width: 819px;
+    padding: 6rem 0 8rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 60rem;
+}
+
+.section-btns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    width: 250px;
+    padding: 1.8rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #21212167;
+    border-radius: 10rem;
+    color: var(--color02);
+    background-color: transparent;
+}
+
+.btn-desconto {
+    width: 350px;
+    background-color: var(--color02);
+    color: var(--color05);
+}
+
+.value {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/*course overview*/
+
+.course-overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color02);
+    padding: 3rem 3rem;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.course-data {
+    width: 35%;
+    color: var(--color05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .8rem;
+}
+.course-data ion-icon {
+    font-size: 3rem;
+}
+/*Article*/
+
+.info {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+
+.info h2 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+.info h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.info p {
+    margin: .875rem 0;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.info ol li {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+/*btn investir*/
+
+.investir {
+    display: flex;
+    padding: 8rem 0;
+    width: 100%;
+    background-color: var(--color02);
+}
+
+.investir-container {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.investir-container h2 {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.investir-container p {
+    font-weight: 500;
+    text-align: justify;
+    color: white;
+    text-align: center;
+}
+
+.investir-container button {
+    width: 200px;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*instrutor*/
+.instrutor {
+    display: flex;
+    padding: 8rem 0;
+    width: 100%;
+    background-color: var(--color04);
+}
+
+.instrutor-container {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    
+}
+
+.instrutor-container h2 {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.instrutor-container p {
+    margin: .875rem 0;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/*voltar ao topo*/
+#return-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color05);
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    border: 1px solid #2121212f;
+    cursor: pointer;
+}
+
+#return-top ion-icon {
+    font-size: 1.5rem;
+    
+}
+
+/*footer*/
+
+footer {
+    padding: 3rem 3rem;
+    background-color: #202020;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.social-icons span{
+    color: rgba(255, 255, 255, 0.44);
+}
+
+.social-icons .redes-sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav__bar {
+        padding: 2rem 2rem;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .section-btns {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    .info p {
+        margin: .5rem 0;
+    }
+
+    .investir {
+        padding: 4rem 0;
+    }
+
+    .course-container {
+        padding: 1rem 0;
+        gap: 4rem;
+    }
+
+    .investir-container {
+        padding: 2rem 2rem;
+    }
+
+    .instrutor {
+        padding: 4rem 0;
+    }
+
+    .instrutor-container {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .instrutor-container p {
+        margin: .5rem 0;
+    }
+    footer {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width:560px) {
+
+
+    .course-container {
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais {
+        flex-wrap: wrap;
+    }
+    .menu-bar {
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+        text-align: center;
+    }
+    .hero p {
+        text-align: center;
+    }
+
+    .section-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width: 625px) {
+    .btn {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .sidenav {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: var(--color05);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        padding: 2rem 0;
+        margin: 2rem 2.5rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 30px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+}
+
+@media (min-width: 625px) {
+    #menu .menu-social {
+        display: none;
+    }
+}
